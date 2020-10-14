@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Business.AlunoBO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<p>@Html.ActionLink("Cadastrar Aluno","Create") | @Html.ActionLink("Lista de Alunos com foto", "ListaAlunos")</p>
+
+<p>
+    @using (Html.BeginForm("Procurar", "Aluno", FormMethod.Get))
+    {
+        <b>Procurar Por:</b>
+        @Html.RadioButton("procurarPor", "Nome", true)<text>Nome</text>
+        @Html.RadioButton("procurarPor", "Email")<text>Email</text><br />
+        @Html.TextBox("criterio")<input type="submit" value="Procurar" />
+    }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Idade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInscricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        using (Html.BeginForm("Delete", "Aluno", new { id = item.Id }))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataInscricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sexo)
+                </td>
+                <td>
+
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                    @* @Html.ActionLink("Deletar", "Delete", new { id = item.Id })*@
+                    @Html.ActionLink("Ver", "Details", new { id = item.Id })
+
+                    <input type="submit" class="btn btn-danger" value="Deletar" onclick="return confirm('Confirma a exclusão do aluno: Nome: @item.Nome e id: @item.Id');" />
+                   
+                </td>
+            </tr>
+        }
+    }
+    </table>
+
+

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MVC_Demo.Models.Cliente>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Clique no link abaixo para ver detalhe do cliente</h2>
+        @*Criar o link*@
+        @Html.ActionLink("Clique aqui para ver detalhe do cliente", "Detalhe")
+
+    <table border="1" class="table-striped table-bordered">
+        @foreach (var cli in Model)
+        {
+            <thead>
+                <tr>
+
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>Email</td>
+                    <td>Telefone</td>
+                    <td>#</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Html.DisplayFor(c => cli.ClienteId)</td>
+                    <td>@Html.DisplayFor(c => cli.Nome)</td>
+                    <td>@Html.DisplayFor(c => cli.Email)</td>
+                    <td>@Html.DisplayFor(c => cli.Telefone)</td>
+                    <td>@Html.ActionLink("Ver cliente",$"Detalhes/{@cli.ClienteId}")</td>
+
+                </tr>
+            </tbody>
+        }
+    </table>
+    </div>
+
+</body>
+</html>
+
+

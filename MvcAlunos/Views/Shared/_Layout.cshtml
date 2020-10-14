@@ -1,0 +1,22 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <div class="pagina"> 
+        @RenderSection("cabecalho")
+        @RenderPage("~/Views/Shared/_Menu.cshtml")
+    </div>
+    <div id="principal">
+        @RenderBody()
+    </div>
+    <div>
+        @RenderSection("Rodape")
+    </div>
+</body>
+</html>

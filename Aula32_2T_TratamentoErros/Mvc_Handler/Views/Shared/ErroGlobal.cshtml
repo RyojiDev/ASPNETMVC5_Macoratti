@@ -1,0 +1,18 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+<h1>Erro Genérico</h1>
+
+<h2>
+   Erro global
+</h2>
+
+<p>
+    <b>Controller que originou o erro:</b> @Model.ControllerName
+</p>
+<p>
+    <b>Action:</b> @Model.ActionName
+</p>
+<p>
+    <b>Tipo da Exceção:</b> @Model.Exception.GetType().FullName
+</p>
+@Html.ActionLink("Retornar", "Index", "Home")

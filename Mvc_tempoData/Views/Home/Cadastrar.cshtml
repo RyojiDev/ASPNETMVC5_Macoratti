@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+<div>
+    <h3>ViewData</h3>
+    @if (ViewData["AlunosViewData"] != null)
+    {
+        foreach (var aluno in ViewData["AlunosViewData"] as List<string>)
+        {
+            <ul>
+                <li>@aluno</li>
+            </ul>
+
+        }
+    }
+    else
+    {
+        <h3> ViewData não chegou!</h3>
+    }
+    <hr />
+
+    <h3>ViewBag</h3>
+    @if (ViewBag.AlunosViewBag != null)
+    {
+        foreach (string aluno in ViewBag.AlunosViewBag)
+        {
+            <ul>
+                <li>@aluno</li>
+            </ul>
+        }
+    }
+    else
+    {
+        <h3>ViewBag não chegou</h3>
+    }
+    <hr />
+
+
+
+    <h3>TempData</h3>
+    @if(TempData["AlunosTempData"] != null) { 
+    foreach (string aluno in TempData["AlunosTempData"] as List<string>)
+    {
+        <ul>
+            <li>@aluno</li>
+        </ul>
+        <hr />
+        }
+    }
+    else
+    {
+        <h3>Tempdata é null</h3>
+    }
+    <h3>Session</h3>
+    @if(Session["AlunosSession"] != null) { 
+    foreach (string aluno in Session["AlunosSession"] as List<string>)
+    {
+        <ul>
+            <li>@aluno</li>
+        </ul>
+        }
+    }
+    else
+    {
+        <h3>Session é null</h3>
+    }
+</div>
+@Html.ActionLink("Retornar", "Index")
+@Html.ActionLink("Cadastrar", "Cadastrar")

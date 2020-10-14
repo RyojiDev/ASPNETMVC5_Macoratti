@@ -1,0 +1,17 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+}
+<h2>Error</h2>
+<hr />
+<h2 class="text-danger">@Model.Exception.Message</h2>
+<br />
+<h3 class="text-danger">
+    Ocorreu um erro durante o processamento da sua  requisição.
+</h3>
+<br />
+Controlador : <h3 class="text-danger">@Model.ControllerName</h3>
+Action : <h3 class="text-danger">@Model.ActionName</h3>
+<br />
+@Html.ActionLink("Retorna", "Index", "Home")

@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index do Gerente - Area do gerente</h2>
+<hr />
+<li>@Html.ActionLink("Usuario","Index","Usuario",new { area="Usuario"},null)</li>
+<li>@Html.ActionLink("Principal","Index","Home",new {area="" },null)</li>
+<li>@Html.ActionLink("Admin","Index","Home",new {area="Admin" },null)</li>

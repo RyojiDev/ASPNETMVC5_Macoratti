@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "AcessoRestrito";
+}
+
+<h2>AcessoRestrito</h2>
+
+<div>
+    <h2>Acesso restrito</h2>
+    <hr />
+    <h3>Somente usuarios autorizados</h3>
+    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+    {
+        <b> Usuario logado </b> @HttpContext.Current.User.Identity.Name;
+    }
+    <br />
+    @Html.ActionLink("Fazer logoff", "LogOff");
+</div>

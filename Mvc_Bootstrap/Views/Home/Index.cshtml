@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h3>Lista de paises</h3>
+        <ul>
+            @foreach (string pais in ViewBag.Paises)
+            {
+                <li>@pais</li>
+            }
+        </ul>
+    </div>
+    @Html.ActionLink("Sobre", "Sobre")
+</body>
+</html>
+
+@section rodape
+{
+    <div id="linharodape">
+        <hr />
+    </div>
+    <div id="rodape">
+        <a href="http://google.com.br">Google Index - (@DateTime.Now.Date.Year)</a>
+    </div>
+}

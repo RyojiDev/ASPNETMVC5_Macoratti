@@ -1,0 +1,30 @@
+﻿@*@{
+        ViewBag.Title = "Sobre";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
+
+<h2>@ViewBag.Titulo</h2>
+
+<div>
+    <p>
+        Ryoji kitano neto - quase tudo de c#
+    </p>
+</div>
+@Html.ActionLink("Retornar", "Index", "Home")
+
+@section rodape
+{
+    <div id="linharodape">
+        <hr />
+    </div>
+    <div id="rodape">
+        Rodape do site (Sobre) - (@DateTime.Now.Date.Year)</a>
+    </div>
+}
+
+@section cabecalho
+{
+    <div id="cabecalho">
+        <h3>Pagina de Layout do site (sobre)</h3>
+    </div>
+}

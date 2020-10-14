@@ -1,0 +1,16 @@
+﻿@model MVC_Demo.Models.Cliente
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <p>Código  :   @Html.TextBoxFor(p => p.ClienteId, new { @type = "number" })</p>
+    <p>Nome    :   @Html.TextBoxFor(p => p.Nome)</p>
+    <p>Email   :   @Html.TextBoxFor(p => p.Email)</p>
+    <p>Telefone:   @Html.TextBoxFor(p => p.Telefone)</p>
+</div>
+

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h1>Tratamento de erros ASP .NET MVC 5</h1>
+<p>
+    Selecione a Action para teste de tratamento de erros:
+</p>
+
+<ul>
+    <li>
+        @Html.ActionLink("Sobrescrevendo o método OnException do controlador I", "Index", "Teste")
+    </li>
+    <li>
+        @Html.ActionLink("Sobrescrevendo o método OnException do controlador usando BaseController", "Index", "Cliente")
+    </li>
+</ul>

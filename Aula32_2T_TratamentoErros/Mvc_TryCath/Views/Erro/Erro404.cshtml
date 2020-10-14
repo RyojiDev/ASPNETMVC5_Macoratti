@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Erro404";
+}
+
+<h2>Erro404</h2>
+
+<h2 class="text-danger">Pagina não encontrada</h2>
+<br />
+<h3 class="text-danger">Não foi possivel localizar : @HttpContext.Current.Request.QueryString</h3>
+<br />
+@Html.ActionLink("Retornar", "Index", "Home")

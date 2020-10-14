@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Mvc_Rotas.Models.Produto>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Produtos</h2>
+
+
+<ul>
+    @foreach (var produto in Model)
+    {
+    <li>
+        @Html.ActionLink(produto.Nome, "Detalhes", "Produto", new
+        {
+            @produtoid = produto.ProdutoId
+        }, null)
+        <em>@Html.DisplayFor(modelItem => produto.Categoria)</em>
+        <em>@Html.DisplayFor(modelItem => produto.Data)</em>
+        <b>@Html.DisplayFor(modelItem => produto.Preco)</b>
+    </li>
+    }
+</ul>
+<div>
+    @Html.ActionLink("Cadastrar Produto","Cadastrar")
+</div>

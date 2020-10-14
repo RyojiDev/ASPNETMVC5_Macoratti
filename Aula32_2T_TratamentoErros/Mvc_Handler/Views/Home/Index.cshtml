@@ -1,0 +1,22 @@
+﻿<div class="well">
+    <h1>Mensagem de erro customizadas em ASP.NET MVC</h1>
+    <p>
+        Selecione a Action para teste:
+    </p>
+    <ul>
+        <li>
+            @Html.ActionLink("Tratamento de erros usando o atributo [HandleError]", "Index", "Teste")
+        </li>
+        <li>
+            @Html.ActionLink("Erro customizado :: InvalidOperationException / HttpException :: atributo [HandleError]", "ErroHttpErros", "Teste")
+        </li>
+        <li>
+            @Html.ActionLink("Tratamento de erros teste Erro Global : Divisão por zero", "DivisaoPorZero", "Teste")
+        </li>
+        <li>
+            @Html.ActionLink("Tratamento de erros teste Erro Global : NotSupportedException  ", "TesteErroGlobal", "Teste")
+        </li>
+    </ul>
+</div>
+
+

@@ -1,0 +1,24 @@
+﻿
+Home -->Index em OnActionExecuting 	 : 15/08/2020 11:03:17
+
+Home -->Index em OnActionExecuted 	 : 15/08/2020 11:03:17
+
+Home -->Home em OnResultnExecuting 	 : 15/08/2020 11:03:17
+
+Home -->Home em OnResultedExecuted 	 : 15/08/2020 11:03:17
+
+Home -->Sobre em OnActionExecuting 	 : 15/08/2020 11:04:01
+
+Home -->Sobre em OnActionExecuted 	 : 15/08/2020 11:04:01
+
+Home -->Home em OnResultnExecuting 	 : 15/08/2020 11:04:01
+
+Home -->Home em OnResultedExecuted 	 : 15/08/2020 11:04:01
+
+Home -->Mensagem em OnActionExecuting 	 : 15/08/2020 11:04:05
+
+Home -->Mensagem em OnActionExecuted 	 : 15/08/2020 11:04:05
+
+Home -->Home em OnResultnExecuting 	 : 15/08/2020 11:04:05
+
+Home -->Home em OnResultedExecuted 	 : 15/08/2020 11:04:09

@@ -1,0 +1,34 @@
+﻿@model MVC_Demo.Models.Cliente
+
+@{
+    ViewBag.Title = "SalvarCliente";
+}
+
+<h2>SalvarCliente</h2>
+<fieldset>
+    <legend>Cliente</legend>
+    <div>
+        <label for="ClienteId">Id</label>
+    </div>
+    <div>
+        <input type="text" value="@Model.ClienteId" id="ClienteId" name="ClienteId" />
+    </div>
+    <div>
+        <label for="Nome">Nome</label>
+    </div>
+    <div>
+        <input type="text" value="@Model.Nome" id="Nome" name="Nome" />
+    </div>
+    <div>
+        <label for="EMail">Email</label>
+    </div>
+    <div>
+        <input type="text" value="@Model.Email" id="Email" name="Email" />
+    </div>
+    <div>
+        <label for="Telefone">Telefone</label>
+    </div>
+    <div>
+        <input type="text" value="@Model.ClienteId" id="Telefone" name="Telefone" />
+    </div>
+</fieldset>

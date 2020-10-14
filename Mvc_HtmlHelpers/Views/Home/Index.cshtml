@@ -1,0 +1,37 @@
+﻿@using Mvc_HtmlHelpers.MeusHelpers
+@model IEnumerable<Mvc_HtmlHelpers.Models.Personalidade>
+
+@{
+    ViewBag.Title = "Index";
+}
+  @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonalidadeNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonalidadeFoto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonalidadeNome)
+        </td>
+        <td>
+            @Html.Imagem(@item.PersonalidadeFoto,"foto")
+            <img src="@Url.Content(@item.PersonalidadeFoto)" width="300px" height="300px" alt="Foto" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PersonalidadeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PersonalidadeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PersonalidadeId })
+        </td>
+    </tr>
+}
+
+</table>

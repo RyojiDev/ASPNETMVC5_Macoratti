@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Transferir</title>
+</head>
+<body>
+    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> 
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken();
+            <b>Informe a conta: </b>
+            @Html.TextBox("Conta")
+            <br />
+            <b>Informe o valor: </b>
+            @Html.TextBox("Valor")
+            <br />
+            <input type="submit" value="transferir" />
+        }
+    </div>
+</body>
+</html>

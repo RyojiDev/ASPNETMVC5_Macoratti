@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Razor</h1>
+</div>
+
+@{
+    var mensagem = "Ryoji.net";
+}
+
+
+
+<p>@mensagem</p>
+
+<p>o ano atual é @DateTime.Now.Year</p>
+
+@{
+    int num1 = 2000;
+    int num2 = 15;
+    int resultado = num1 + num2;
+
+}
+
+<p>Resulta é @resultado</p>
+
+
+@*criando um helper com razor*@
+
+@{ var vetor = new List<int> { 100, 20, 40, 70, 80 };
+    <ul>
+        @{ 
+            foreach(int valor in vetor)
+            {
+                <li>@ValorColorido(valor)</li>
+            }
+        }
+    </ul>
+}
+
+@helper ValorColorido(int valor) { 
+var cor = "Blue";
+if(valor > 50)
+{
+        cor = "Red";
+}
+<span style="color:@cor">@String.Format("{0:c}",valor)</span>
+    }

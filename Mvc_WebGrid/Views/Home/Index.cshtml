@@ -1,0 +1,33 @@
+﻿@using Mvc_WebGrid.Models;
+
+@model IEnumerable<Times>
+
+<div class="jumbotron">
+    <div style="font-family:algerian">
+        @ViewBag.Mensagem
+    </div>
+  <div style="font-family:Arial">
+      @{ 
+          WebGrid grid = new WebGrid(Model,canPage:true,rowsPerPage:5);
+      }
+
+      @grid.GetHtml(
+            tableStyle: "webgrid",
+            headerStyle : "head",
+            alternatingRowStyle : "alt",
+            displayHeader : true,
+            mode: WebGridPagerModes.NextPrevious, previousText: "Anterior", nextText:"Próximo",
+              columns: grid.Columns(
+              grid.Column("Selecionar", header: "Selecione", format: @<i>@item.GetSelectLink("Selecionar")</i>),
+              grid.Column("Time", header:"Time", format: @<i>@item.Time</i>),
+              grid.Column("Pontos", canSort:true , header: "Pontos", format: @<b>@item.Pontos</b>),
+              grid.Column("Jogos", canSort:false , header:"Jogos", format: @<b>@item.Jogos</b>)
+        ))
+
+      @if (grid.HasSelection)
+      {
+          @RenderPage("~/Views/Home/_Detalhes.cshtml", new { Times = grid.SelectedRow });
+      }
+
+  </div>
+</div>

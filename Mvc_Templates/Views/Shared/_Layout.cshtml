@@ -1,0 +1,31 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout</title>
+    
+    <link href="~/Styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header"> 
+        @if (IsSectionDefined("header"))
+        {
+            @RenderSection("header")
+        }
+        else
+        {
+            @RenderPage("~/Views/Shared/_Header.cshtml");
+        }
+    </div>
+    <div id="main">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <hr />
+        &copy; 2015 Ryoji .Net Todos os direitos reservados.
+    </div>
+</body>
+</html>

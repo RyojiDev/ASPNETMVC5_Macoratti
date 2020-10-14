@@ -1,0 +1,20 @@
+﻿<div class="well">
+    <h1>Mensagem de erro customizadas em ASP.NET MVC</h1>
+    <p>
+        Selecione a Action para teste:
+    </p>
+    <ul>
+        <li>
+            @Html.ActionLink("ELMAH e  atributo [HandleError]", "Index", "Teste")
+        </li>
+        <li>
+            @Html.ActionLink("ELMAH com Erro customizado :: InvalidOperationException / HttpException :: atributo [HandleError]", "ErroHttpErros", "Teste")
+        </li>
+        <li>
+            @Html.ActionLink("ELMAH e Erro Global : Divisão por zero", "DivisaoPorZero", "Teste")
+        </li>
+        <li>
+            @Html.ActionLink("ELMAH e teste de Erro Global : NotSupportedException  ", "TesteErroGlobal", "Teste")
+        </li>
+    </ul>
+</div>

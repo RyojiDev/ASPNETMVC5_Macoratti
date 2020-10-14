@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <div>
+        @RenderSection("header",false)
+        @RenderPage("~/Views/Home/Index.cshtml")
+    </div>
+    
+    <div>
+        @RenderBody();
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntidadesDAO.dll.config
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntidadesDAO.dll
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntidadesDAO.pdb
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntityFramework.dll
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntityFramework.xml
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\obj\Debug\EntidadesDAO.csprojAssemblyReference.cache
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\obj\Debug\EntidadesDAO.csproj.CopyComplete
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\obj\Debug\EntidadesDAO.dll
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\EntidadesDAO\obj\Debug\EntidadesDAO.pdb

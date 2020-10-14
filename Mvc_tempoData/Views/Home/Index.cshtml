@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Usando ViewData,ViewBag, TempData e Session</h2>
+
+<div>
+    <h3>ViewData</h3>
+    @foreach (var aluno in ViewData["AlunosViewData"] as List<string>)
+    {
+        <ul>
+            <li>@aluno</li>
+        </ul>
+        <hr />
+    }
+    <h3>ViewBag</h3>
+    @foreach (string aluno in ViewBag.AlunosViewBag)
+    {
+        <ul>
+            <li>@aluno</li>
+        </ul>
+        <hr />
+    }
+
+    <h3>TempData</h3>
+    @foreach (string aluno in TempData["AlunosTempData"] as List<string>)
+    {
+        <ul>
+            <li>@aluno</li>
+        </ul>
+        <hr />
+    }
+    <h3>Session</h3>
+    @foreach (string aluno in Session["AlunosSession"] as List<string>)
+    {
+        <ul>
+            <li>@aluno</li>
+        </ul>
+    }
+</div>
+@Html.ActionLink("Retornar","Index")
+@Html.ActionLink("Cadastrar","Cadastrar")
+
+

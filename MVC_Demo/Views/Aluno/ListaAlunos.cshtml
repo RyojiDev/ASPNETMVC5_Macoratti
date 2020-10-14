@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Business.AlunoBO>
+
+@{
+    ViewBag.Title = "ListaAlunos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListaAlunos</h2>
+
+
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_Alunos",item);
+}
+
+   

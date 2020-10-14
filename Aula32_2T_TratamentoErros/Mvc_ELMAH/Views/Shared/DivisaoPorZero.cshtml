@@ -1,0 +1,19 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+<h2>Divisao Por Zero</h2>
+
+<p>
+    <b>Cotroller: </b> @Model.ControllerName
+</p>
+
+<p>
+    <b>Action : </b> @Model.ActionName
+</p>
+
+<p>
+    Message: @Model.Exception.Message
+</p>
+
+<p>
+    Stack Trace: @Model.Exception.StackTrace
+</p>

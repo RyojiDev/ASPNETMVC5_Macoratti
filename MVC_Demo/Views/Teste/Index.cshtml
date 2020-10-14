@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div>
+    @using (Html.BeginForm("Salvar","Home"))
+    {
+    <div>
+        <p>Nome:     @ViewData["nome"]</p>
+        <p>Email:    @ViewData["email"]</p>
+        <p>Telefone: @ViewData["telefone"]</p>
+    </div>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" />
+    <label>Email:</label>
+    <input type="text" name="email" />
+    <label>Nome:</label>
+    <input type="text" name="telefone" />
+
+    <input type="submit" value="EnviarDados" />
+
+    }
+</div>
+

@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "EnviarEmail";
+}
+
+<h2>EnviarEmail</h2>
+
+<h2>Resposta Email</h2>
+
+<p style="color:red">@Html.ValidationMessage("Erro_Form")</p>
+
+@using (Html.BeginForm("EnviarEmail","Email"))
+{
+    <table>
+        <tr>
+            <td>Destino:</td>
+            <td>@Html.TextBox("emailDestino")</td>
+        </tr>
+        <tr>
+            <td>Assunto:</td>
+            <td>@Html.TextBox("assunto","", new {@maxlenght="100", @style="width: 350 px;" })</td>
+        </tr>
+        <tr>
+            <td>Mensagem:</td>
+            <td>@Html.TextArea("mensagem", "", new { @cols = "20", @rows = "5", @style = "width: 350px; height: 300px; " });</td>
+        </tr>
+    </table>
+    <input type="submit"  value="Enviar Email" />
+}

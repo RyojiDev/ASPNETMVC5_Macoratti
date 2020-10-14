@@ -1,0 +1,5 @@
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\Business\bin\Debug\Business.dll
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\Business\bin\Debug\Business.pdb
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\Business\obj\Debug\Business.dll
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\Business\obj\Debug\Business.pdb
+C:\Users\ryoji.kitano\Documents\Ryoji-Projetos\ASPNETMVC_MACORATTI\RyojiKitano.Curso.Macoratti.ASPNETMVC\Business\obj\Debug\Business.csprojAssemblyReference.cache

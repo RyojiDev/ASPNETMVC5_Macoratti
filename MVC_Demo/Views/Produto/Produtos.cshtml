@@ -1,0 +1,25 @@
+﻿@model MVC_Demo.Models.Produto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Produtos</title>
+</head>
+<body>
+    <div> 
+        @Html.TextBoxFor(p => p.Id, new { @type = "number" })
+    </div>
+    <div>
+        @Html.TextBoxFor(p => p.Nome)
+    </div>
+    <div>
+        @Html.TextBoxFor(p=>p.Descricao)
+    </div>
+</body>
+</html>

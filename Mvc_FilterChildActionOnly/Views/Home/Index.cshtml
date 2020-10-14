@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @ViewBag.Titulo
+    <div>
+        <h2>Lista de produtos</h2>
+        <hr />
+        @Html.Action("Produtos", new { NomesProdutos = new List<string> { "Impressora", "Notebook", "Teclado" } })
+        @{Html.RenderAction("Produtos", new { NomesProdutos = new List<string> { "Impressora", "Notebook", "Teclado" } });}
+    </div>
+</body>
+</html>

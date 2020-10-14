@@ -1,0 +1,25 @@
+﻿@model MVC_Demo.Models.Cliente
+
+@{
+    ViewBag.Title = "Detalhe";
+}
+
+<h2>Detalhe</h2>
+
+
+
+<div>
+    @using (Html.BeginForm("SalvarCliente", "Cliente"))
+    {
+        <br />
+        <p>Código  :   @Html.TextBoxFor(p => p.ClienteId, new { @type = "number" })</p>
+        <p>Nome    :   @Html.TextBoxFor(p => p.Nome)</p>
+        <p>Email   :   @Html.TextBoxFor(p => p.Email)</p>
+        <p>Telefone:   @Html.TextBoxFor(p => p.Telefone)</p>
+        <p>
+            <input type="submit" value="Enviar"/>
+        </p>
+       
+
+    }
+</div>

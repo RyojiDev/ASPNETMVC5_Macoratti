@@ -1,0 +1,52 @@
+﻿@model MvcLayout.Models.Produto
+
+@*@{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
+
+<h2>@ViewData["Titulo"]</h2>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProdutoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@section rodape
+{
+    <div id="linharodape">
+        <hr />
+    </div>
+    <div id="rodape">
+        <a href="http://google.com.br">Google .net - (@DateTime.Now.Date.Year)</a>
+    </div>
+}
+
+@section cabecalho
+{
+    <div id="cabecalho">
+        <h3>Pagina de Layout do site (index)</h3>
+    </div>
+}

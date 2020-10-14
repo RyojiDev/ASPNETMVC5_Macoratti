@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div>
+    @using (Html.BeginForm("Salvar","Home"))
+    {
+        <fieldset>
+            <legend>Formulario de Cadastro</legend>
+            <ol>
+                <li>
+                    @Html.Label("Nome")
+                    @Html.TextBox("nome")
+                </li>
+                <li>
+                    @Html.Label("Email")
+                    @Html.TextBox("email")
+                </li>
+                <li>
+                    @Html.Label("Telefone")
+                    @Html.TextBox("telefone")
+                </li>
+            </ol>
+            <input type="submit" value="Enviar Dados" />
+        </fieldset>
+    }
+</div>

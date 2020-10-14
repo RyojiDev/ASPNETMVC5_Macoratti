@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+@
+<body>
+    <div class="container"> 
+        @RenderPage("~/Views/Shared/_Navegacao.cshtml")
+        <div class="row">
+            @RenderPage("~/Views/Shared/_Menu.cshtml")
+            <div class="col-md-10">
+                @RenderBody();
+            </div>
+        </div>
+        <div class="row">
+            <footer class="pull-right">
+                @if (IsSectionDefined("rodape"))
+                {
+                    @RenderSection("rodape")
+                }
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

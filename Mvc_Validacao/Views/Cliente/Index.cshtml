@@ -1,0 +1,67 @@
+﻿@model Mvc_Validacao.Models.Cliente
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/site.css" rel="stylesheet" />
+
+    @*refererencias ao jquery*@
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Cadastro de cliente</h2>
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true, "Ocorreu um erro no formulario")
+            <fieldset>
+                <legend>Cadastro de cliente</legend>
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Nome)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.Nome)
+                    @Html.ValidationMessageFor(model => model.Nome)
+                </div>
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Email)
+                </div>
+                <div>
+                    @Html.EditorFor(model => model.Email)
+                    @Html.ValidationMessageFor(model => model.Email)
+                </div>
+
+                <div>
+                    @Html.LabelFor(model => model.Telefone)
+                </div>
+                <div>
+                    @Html.EditorFor(model => model.Telefone)
+                    @Html.ValidationMessageFor(model => model.Telefone)
+                </div>
+                <div>
+                    @Html.LabelFor(model => model.Idade)
+                </div>
+                <div>
+                    @Html.EditorFor(model => model.Idade)
+                    @Html.ValidationMessageFor(model => model.Idade)
+                </div>
+                <p>
+                    <input type="submit" value="Enviar dados" />
+                </p>
+            </fieldset>
+        }
+    </div>
+</body>
+</html>

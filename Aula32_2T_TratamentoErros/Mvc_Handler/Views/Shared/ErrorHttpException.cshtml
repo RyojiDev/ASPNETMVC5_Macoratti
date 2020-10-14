@@ -1,0 +1,22 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+
+@{
+    ViewBag.Title = "ErrorHttpException";
+}
+
+<h2>ErrorHttpException</h2>
+
+<h2>
+    Ocorreu um erro durante a execução da ultima ação
+</h2>
+
+<p>
+    <b>Controller que originou o erro:</b> @Model.ControllerName
+</p>
+
+<p>
+    <b>Tipo da excessão:</b> @Model.Exception.GetType().FullName
+</p>
+
+@Html.ActionLink("Retornar","Index","Home")
